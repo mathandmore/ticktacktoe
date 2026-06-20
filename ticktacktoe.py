@@ -47,38 +47,110 @@ def ttt():
             symbl = "x"
             play = int(input(f"Player {symbl} choose spot 1-9"))
             if play == 1:
+                while True:
+                    if board2[0][0] == "⚬" or board2[0][0] == "✕":
+                        print("Spot taken, try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 0
                 c = 0
                 board2[r][c]="✕"
             elif play == 2:
+                while True:
+                    if board2[0][1] == "⚬" or board2[0][1] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 0
                 c = 1
                 board2[r][c]="✕"
             elif play == 3:
+                while True:
+                    if board2[0][2] == "⚬" or board2[0][2] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 0
                 c = 2
                 board2[r][c]="✕"
             elif play == 4:
+                while True:
+                    if board2[1][0] == "⚬" or board2[1][0] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 1
                 c = 0
                 board2[r][c]="✕"
+                c = 0
+                board2[r][c]="✕"
             elif play == 5:
+                while True:
+                    if board2[1][1] == "⚬" or board2[1][1] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 1
                 c = 1
                 board2[r][c]="✕"
             elif play == 6:
+                while True:
+                    if board2[1][2] == "⚬" or board2[1][2] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 1
                 c = 2
                 board2[r][c]="✕"
             elif play == 7:
+                while True:
+                    if board2[2][0] == "⚬" or board2[2][0] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 2
                 c = 0
                 board2[r][c]="✕"
             elif play == 8:
+                while True:
+                    if board2[2][1] == "⚬" or board2[2][1] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 2
                 c = 1
                 board2[r][c]="✕"
             else:
+                while True:
+                    if board2[2][2] == "⚬" or board2[2][2] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 2
                 c = 2
                 board2[r][c]="✕"
@@ -93,38 +165,110 @@ def ttt():
             play = int(input(f"Player {symbl} choose spot 1-9"))
 
             if play == 1:
+                while True:
+                    if board2[0][0] == "⚬" or board2[0][0] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 0
                 c = 0
                 board2[r][c]="⚬"
             elif play == 2:
+                while True:
+                    if board2[0][1] == "⚬" or board2[0][1] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 0
                 c = 1
                 board2[r][c]="⚬"
             elif play == 3:
+                while True:
+                    if board2[0][2] == "⚬" or board2[0][2] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 0
                 c = 2
                 board2[r][c]="⚬"
             elif play == 4:
+                while True:
+                    if board2[1][0] == "⚬" or board2[1][0] == "✕":
+                        cs()
+                        print_board(board2) 
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 1
                 c = 0
                 board2[r][c]="⚬"
             elif play == 5:
+                while True:
+                    if board2[1][1] == "⚬" or board2[1][1] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 1
                 c = 1
                 board2[r][c]="⚬"
             elif play == 6:
+                while True:
+                    if board2[1][2] == "⚬" or board2[1][2] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 1
                 c = 2
                 board2[r][c]="⚬"
             elif play == 7:
+                while True:
+                    if board2[2][0] == "⚬" or board2[2][0] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 2
                 c = 0
                 board2[r][c]="⚬"
             elif play == 8:
+                while True:
+                    if board2[2][1] == "⚬" or board2[2][1] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 2
                 c = 1
                 board2[r][c]="⚬"
             else:
+                while True:
+                    if board2[2][2] == "⚬" or board2[2][2] == "✕":
+                        cs()
+                        print_board(board2)
+                        print("Spot taken try again")
+                        play = int(input(f"Player {symbl} choose spot 1-9"))
+                    else:
+                        break
                 r = 2
                 c = 2
                 board2[r][c]="⚬"
@@ -132,4 +276,3 @@ def ttt():
 
 
 ttt()
-🗺
