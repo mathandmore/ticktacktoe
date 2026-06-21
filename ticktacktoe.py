@@ -33,7 +33,7 @@ def ttt():
         if game%2 == 0:
             symbl = "✕"
         else:
-            symbl = "o"
+            symbl = "࡞"
             
         while True:
                 play  = int(input(f"Player {symbl} choose spot 1-9"))
@@ -50,6 +50,21 @@ def ttt():
                 else:
                     board2[r][c] = symbl
                     #TODO win detection 
+                    if board2[0][0] == board2[0][1] == board2[0][2] or board2[1][0] == board2[1][1] == board2[1][2] or board2[2][0] == board2[2][1] == board2[2][2]:
+                        cs()
+                        print_board(board2)
+                        print(f"{symbl}, Wins")
+                        return
+                    elif board2[0][0] == board2[1][0] == board2[2][0] or board2[0][1] == board2[1][1] == board2[2][1] or board2[0][2] == board2[1][2] == board2[2][2]:
+                        cs()
+                        print_board(board2)
+                        print(f"{symbl}, Wins")
+                        return
+                    elif board2[0][0] == board2[1][1] == board2[2][2] or board2[2][0] == board2[1][1] == board2[0][2]:
+                        cs()
+                        print_board(board2)
+                        print(f"{symbl}, Wins")
+                        return
                     break
 
 ttt()
